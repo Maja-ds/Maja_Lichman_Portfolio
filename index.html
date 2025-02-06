@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio_Maja_Lichman</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<title>Seite mit Navigationsleiste</title>
+		<style>
+			/* Styling der Navigationsleiste */
+            .navbar {
+                overflow: hidden;
+                background-color: dimgrey;
+                opacity: 0.9;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 1000;
+                display: flex; /* Flexbox aktivieren */
+                justify-content: center;
+            }
+
+				/* Links in der Navigationsleiste */
+				.navbar a {
+					float: left;
+					display: block;
+					color: white;
+					text-align: center;
+					padding: 14px 20px;
+					text-decoration: none;
+				}
+
+					/* Hover-Effekt für die Links */
+                    .navbar a:hover {
+                        background-color: dimgray;
+                    }
+
+			/* Abstand zum Inhalt, damit dieser nicht von der Navbar überlappt wird */
+			.content {
+				margin-top: 50px; /* Höhe der Navbar */
+				padding: 20px;
+			}
+		</style>
+		<!-- Navigationsleiste -->
+		<div class="navbar">
+			<a href="#home" style="text-decoration: none; outline: none; border: none">Home</a>
+			<a href="#projekts" style="text-decoration: none; outline: none; border: none">Projekts</a>
+		</div>
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<a href="#" class="image avatar"><img src="images/bild4.jpg" alt="" /></a>
+				<h1><strong>Hi, I am Maja Lichman</strong></h1>
+				<p>Check out my projects below</p>
+			</div>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- One -->
+			<section id="one">
+				<header class="major">
+					<span id="home">
+						<h2>Education</h2>
+					</span>
+						<ul>
+							<li>
+								B.A. Geschichte der Naturwissenschaft und Technik<br />
+								Nebenfach: Volkswirtschaftslehre
+							</li>
+							<li>M.A. Digital Humanities</li>
+						</ul>
+				</header>
+				<header class="major">
+					<h2>Skills</h2>
+					<ul>
+						<li>R</li>
+						<li>Python</li>
+						<li>SQL</li>
+						<li>Tableau</li>
+					</ul>
+				</header>
+
+			</section>
+
+			<!-- Two -->
+			<section id="two">
+				<span id="projekts">
+					<h1>Projects</h1>
+			    </span>
+					<div class="row">
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://maja-ds.github.io/project01/data_cleaning.html" target="_blank" style="text-decoration: none; outline: none; border: none" class="project thumb">
+								<img src="images/thumbs/09.png" alt="" style="width: 350px; height: 190px; border: 2px solid grey; border-radius: 5px;" />
+							</a>
+							<h3>Data Cleaning with Python</h3>
+							<ul>
+								<li>Datenbereinigung</li>
+								<li>Datenstandardisierung</li>
+								<li>Datenvisualisierung</li>
+							</ul>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://maja-ds.shinyapps.io/Test/" target="_blank" style="text-decoration: none; outline: none; border: none" class="project thumb">
+								<img src="images/thumbs/13.png" alt="" style="width: 350px; height: 190px; height: 190px; border: 2px solid grey; border-radius: 5px;" />
+							</a>
+							<h3>Shiny-App with R</h3>
+							<ul>
+								<li>
+									Datenfilterung
+								</li>
+								<li>Netzwerkvisualisierung</li>
+								<li>Geovisualisierung</li>
+							</ul>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://rpubs.com/Maja-ds/rfdoc" target="_blank" style="text-decoration: none; outline: none; border: none" class="project thumb">
+								<img src="images/thumbs/10.png" alt="" style="width: 350px; height: 190px; border: 2px solid grey; border-radius: 5px;" />
+							</a>
+							<h3>Random Forest with R</h3>
+							<ul>
+								<li>Tuning der Parameter</li>
+								<li>Visualisierung der Ergebnisse</li>
+							</ul>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://rpubs.com/Maja-ds/sampdoc" target="_blank" style="text-decoration: none; outline: none; border: none" class="project thumb">
+								<img src="images/thumbs/11.png" alt="" style="width: 350px; height: 190px; border: 2px solid grey; border-radius: 5px;" />
+							</a>
+							<h3>Data Sampling for ML with R</h3>
+							<ul>
+								<li>Ermittlung des besten Modell</li>
+								<li>Vergleich der Sampling-Methoden</li>
+							</ul>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://rpubs.com/Maja-ds/nlpdoc" target="_blank" style="text-decoration: none; outline: none; border: none" class="project thumb">
+								<img src="images/thumbs/12.png" alt="" style="width: 350px; height: 190px; height: 190px; border: 2px solid grey; border-radius: 5px;" />
+							</a>
+							<h3>Natural Language Processing with R</h3>
+							<ul>
+								<li>Datenbereinigung</li>
+								<li>
+									Topic Modeling
+								</li>
+								<li>Visualisierung</li>
+							</ul>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://rpubs.com/Maja-ds/snadoc" target="_blank" style="text-decoration: none; outline: none; border: none" class=" project thumb">
+								<img src="images/thumbs/08.png" alt="" style="width: 350px; height: 190px; border: 2px solid grey; border-radius: 5px;" />
+							</a>
+							<h3>Social Network Analysis with R</h3>
+							<ul>
+								<li>Visualisierung</li>
+								<li>Ermittlung der zentralen Parameter</li>
+								<li>Regressionsanalyse mit BTERGM</li>
+							</ul>
+						</article>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<h4>Contact me</h4>
+				<ul class="icons">
+					<li><a href="mailto:maja.lichman@gmx.de" " class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="https://github.com/Maja-ds/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://www.linkedin.com/in/maja-lichman-51721132b/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>Design: <a href="http://html5up.net" target="_blank" style="text-decoration: none; outline: none; border: none">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
