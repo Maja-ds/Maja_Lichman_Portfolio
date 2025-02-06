@@ -141,12 +141,13 @@ html {
 		line-height: 0.3em;
 		margin: 0 0 1em 0;
 	}
+
        h7 {
 	color: white;
 	font-weight: 300;
 	line-height: 0.3em;
 	margin: 0 0 1em 0;
-}
+        }
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: black;
