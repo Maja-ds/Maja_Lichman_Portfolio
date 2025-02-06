@@ -242,7 +242,7 @@ html {
 		text-align: right;
 	}
     #home, #projekts {
-	scroll-margin-top: 100px; /* Nur f¸r diese IDs */
+	scroll-margin-top: 100px; /* Nur f√ºr diese IDs */
      }
 
 /* Container */
@@ -2060,7 +2060,7 @@ html {
 		left: 50%;
 		line-height: 2.25em;
 		margin: -1.25em 0 0 -3em;
-		opacity: 1; /* Unsichtbar standardm‰ﬂig */
+		opacity: 1; /* Unsichtbar standardm√§√üig */
 		padding: 0 1.5em;
 		position: absolute;
 		text-align: center;
@@ -3120,7 +3120,6 @@ html {
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
