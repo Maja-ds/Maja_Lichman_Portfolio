@@ -3273,26 +3273,27 @@ html {
     .gallery {
         display: grid;
         grid-template-columns: 1fr; /* Ein Bild pro Zeile */
-        gap: 0.5rem; /* Kleinerer Abstand zwischen Links/Bildern */
-        padding: 0.5rem; /* Rand für die Galerie */
+        gap: 1rem; /* Abstand zwischen den Elementen */
+        padding: 1rem; /* Abstand vom Rand des Displays */
     }
 
     .project.thumb {
         display: block; /* Links sollen wie Blöcke wirken */
-        margin: 0 auto; /* Zentriert die Links innerhalb der Galerie */
-        text-align: center; /* Zentriert den Inhalt innerhalb des Links */
-        width: 90%; /* Links nehmen 90% der verfügbaren Breite ein */
-        max-width: 350px; /* Maximale Breite, damit die Links nicht zu groß werden */
+        margin: 0 auto; /* Zentriert den Link */
+        text-align: center; /* Zentriert den Inhalt im Link */
+        width: 90%; /* Link nimmt 90% der verfügbaren Breite ein */
+        max-width: 300px; /* Optionale maximale Breite */
     }
 
     .project.thumb img {
         display: block; /* Stellt sicher, dass das Bild allein im Block ist */
         width: 100%; /* Bild passt sich der Breite des Links an */
+        max-width: calc(100% - 1rem); /* Bezieht den Abstand ein */
         height: auto; /* Beibehaltung des Seitenverhältnisses */
         border: 4px solid orange; /* Bildrahmen bleibt erhalten */
         border-radius: 5px; /* Abgerundete Ecken */
-        margin: 0; /* Entfernt Abstände um das Bild */
-        box-sizing: border-box; /* Bezieht den Rahmen in die Breite des Bildes ein */
+        margin: 0 auto; /* Zentriert das Bild */
+        box-sizing: border-box; /* Bezieht den Rahmen in die Breite ein */
     }
 }
 
