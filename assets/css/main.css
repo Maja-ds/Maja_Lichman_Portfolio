@@ -3271,27 +3271,28 @@ html {
 	}
 @media (max-width: 768px) {
     .gallery {
+        display: grid;
         grid-template-columns: 1fr; /* Ein Bild pro Zeile */
         gap: 0.5rem; /* Kleinerer Abstand zwischen Links/Bildern */
         padding: 0.5rem; /* Rand für die Galerie */
     }
 
     .project.thumb {
-        display: flex; /* Flexbox für zentrierte Inhalte */
-        justify-content: center; /* Horizontal zentrieren */
-        align-items: center; /* Vertikal zentrieren */
-        margin: 0 auto; /* Zentriert den gesamten Link im Container */
-        width: 100%; /* Link nimmt die volle Breite ein */
-        max-width: 350px; /* Optionale maximale Breite */
+        display: block; /* Links sollen wie Blöcke wirken */
+        margin: 0 auto; /* Zentriert die Links innerhalb der Galerie */
+        text-align: center; /* Zentriert den Inhalt innerhalb des Links */
+        width: 90%; /* Links nehmen 90% der verfügbaren Breite ein */
+        max-width: 350px; /* Maximale Breite, damit die Links nicht zu groß werden */
     }
 
     .project.thumb img {
-        width: 100%; /* Bild nimmt die gesamte Breite des Links ein */
-        max-width: 100%; /* Maximale Breite bleibt flexibel */
+        display: block; /* Stellt sicher, dass das Bild allein im Block ist */
+        width: 100%; /* Bild passt sich der Breite des Links an */
         height: auto; /* Beibehaltung des Seitenverhältnisses */
         border: 4px solid orange; /* Bildrahmen bleibt erhalten */
         border-radius: 5px; /* Abgerundete Ecken */
-        margin: 0; /* Entfernt unnötige Abstände */
+        margin: 0; /* Entfernt Abstände um das Bild */
+        box-sizing: border-box; /* Bezieht den Rahmen in die Breite des Bildes ein */
     }
 }
 
