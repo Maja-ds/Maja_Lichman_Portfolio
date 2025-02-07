@@ -3283,9 +3283,9 @@ html {
         margin: 0 auto; /* Zentriert den gesamten Link im Container */
         width: 100%; /* Link nimmt die volle Breite ein */
     }
-       .gallery img {
+       .project.thumb img {
         width: 100%;
-        max-width: calc(100% - 1rem); /* Platz für den Randabstand */
+        max-width: calc(100% - 0.1rem); /* Platz für den Randabstand */
         height: auto;
         margin: 0 auto; /* Zentriert das Bild */
     }
