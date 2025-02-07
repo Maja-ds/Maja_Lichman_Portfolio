@@ -3278,7 +3278,7 @@ html {
 
     .gallery img {
         width: 100%; /* Bilder passen sich an die verfügbare Breite an */
-        max-width: calc(100% - 2rem); /* Verhindert, dass Bilder breiter als der Bildschirm werden */
+        max-width: calc(100% - 0.5rem); /* Verhindert, dass Bilder breiter als der Bildschirm werden */
         height: auto; /* Seitenverhältnis bleibt erhalten 
         margin: 0 auto; /* Zentriert das Bild horizontal */
     }
