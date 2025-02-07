@@ -3273,15 +3273,13 @@ html {
     .gallery {
         grid-template-columns: 1fr; /* Ein Bild pro Zeile */
         gap: 1rem; /* Abstand zwischen den Bildern */
-        padding: 0 1rem; /* Randabstand rechts und links für die gesamte Galerie */
+        padding: 0 0.5rem; /* Randabstand rechts und links für die gesamte Galerie */
     }
 
     .gallery img {
         width: 100%; /* Bilder passen sich an die verfügbare Breite an */
         max-width: calc(100% - 2rem); /* Verhindert, dass Bilder breiter als der Bildschirm werden */
-        height: auto; /* Seitenverhältnis bleibt erhalten */
-        border: 2px solid red;
-        border-radius: 5px;
+        height: auto; /* Seitenverhältnis bleibt erhalten 
         margin: 0 auto; /* Zentriert das Bild horizontal */
     }
 }
