@@ -2198,17 +2198,6 @@ html {
 			}
 
 
-@media (max-width: 768px) { /* Für Tablets und kleinere Bildschirme */
-    .project.thumb {
-        grid-template-columns: 1fr; /* Eine Spalte */
-        gap: 0.5rem; /* Etwas weniger Abstand */
-    }
-
-    .gallery img {
-        border-radius: 5px; /* Kleinere abgerundete Ecken auf kleinen Bildschirmen */
-    }
-}
-
 /* List */
 
 	ol {
