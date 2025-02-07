@@ -3269,3 +3269,8 @@ html {
 			}
 
 	}
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr; /* Ein Bild pro Zeile */
+    }
+}
