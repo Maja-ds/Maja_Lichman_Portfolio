@@ -3272,27 +3272,22 @@ html {
 @media (max-width: 768px) {
     .gallery {
         grid-template-columns: 1fr; /* Ein Bild pro Zeile */
-        gap: 1rem; /* Abstand zwischen den Bildern */
-        padding: 0 0.5rem; /* Randabstand rechts und links für die gesamte Galerie */
+        gap: 0.5rem; /* Kleinerer Abstand zwischen Links/Bildern */
+        padding: 0.5rem; /* Weniger Rand für die Galerie */
     }
 
-    .gallery img {
-        width: 100%; /* Bilder passen sich an die verfügbare Breite an */
-        max-width: calc(100% - 0.5rem); /* Verhindert, dass Bilder breiter als der Bildschirm werden */
-        height: auto; /* Seitenverhältnis bleibt erhalten 
-        margin: 0 auto; /* Zentriert das Bild horizontal */
-    }
-       .project.thumb {
-        display: flex; /* Flexbox zur Zentrierung */
-        justify-content: center; /* Zentriert horizontal */
-        align-items: center; /* Zentriert vertikal */
-        margin: 0 auto; /* Zentriert den gesamten Link */
-        width: 100%; /* Passt die Breite an den Bildschirm an */
+    .project.thumb {
+        display: flex; /* Flexbox für zentrierte Inhalte */
+        justify-content: center; /* Horizontal zentrieren */
+        align-items: center; /* Vertikal zentrieren */
+        margin: 0 auto; /* Zentriert den gesamten Link im Container */
+        width: 100%; /* Link nimmt die volle Breite ein */
     }
 
     .project.thumb img {
-        width: 90%; /* Bild passt sich dem mobilen Bildschirm an */
+        width: 90%; /* Bild nimmt 90% der verfügbaren Breite ein */
+        max-width: 350px; /* Optional: Maximale Breite für größere Bilder */
         height: auto; /* Beibehaltung des Seitenverhältnisses */
-        max-width: 350px; /* Optional: Maximale Breite für kleinere Bildschirme */
     }
 }
+
