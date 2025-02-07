@@ -3282,4 +3282,17 @@ html {
         height: auto; /* Seitenverhältnis bleibt erhalten 
         margin: 0 auto; /* Zentriert das Bild horizontal */
     }
+       .project.thumb {
+        display: flex; /* Flexbox zur Zentrierung */
+        justify-content: center; /* Zentriert horizontal */
+        align-items: center; /* Zentriert vertikal */
+        margin: 0 auto; /* Zentriert den gesamten Link */
+        width: 100%; /* Passt die Breite an den Bildschirm an */
+    }
+
+    .project.thumb img {
+        width: 90%; /* Bild passt sich dem mobilen Bildschirm an */
+        height: auto; /* Beibehaltung des Seitenverhältnisses */
+        max-width: 350px; /* Optional: Maximale Breite für kleinere Bildschirme */
+    }
 }
