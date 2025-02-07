@@ -2197,6 +2197,30 @@ html {
 				border: 4px solid #49bf9d;
 			}
 
+
+/* Basis-Styling für die einzelnen Bilder */
+.project.thumb {
+	display: inline-block; /* Bilder nebeneinander */
+	width: calc(50% - 1rem); /* Bilder nehmen 50% der Breite ein, minus Abstand */
+	margin: 0.5rem; /* Abstand zwischen den Bildern */
+	text-align: center;
+	box-sizing: border-box; /* Padding und Border in die Breite einrechnen */
+}
+
+	.project.thumb img {
+		width: 100%; /* Bild passt sich der Breite an */
+		height: auto; /* Beibehaltung des Seitenverhältnisses */
+		border-radius: 10px; /* Optional: Abgerundete Ecken */
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schatten */
+	}
+
+@media (max-width: 768px) { /* Für Mobilgeräte */
+	.project.thumb {
+		width: 100%; /* Jedes Bild nimmt die volle Breite ein */
+		margin: 0.5rem 0; /* Nur oben und unten Abstand */
+	}
+}
+
 /* List */
 
 	ol {
