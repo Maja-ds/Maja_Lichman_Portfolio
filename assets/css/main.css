@@ -3283,11 +3283,11 @@ html {
         margin: 0 auto; /* Zentriert den gesamten Link im Container */
         width: 100%; /* Link nimmt die volle Breite ein */
     }
-
-    .project.thumb img {
-        width: 90%; /* Bild nimmt 90% der verfügbaren Breite ein */
-        max-width: 350px; /* Optional: Maximale Breite für größere Bilder */
-        height: auto; /* Beibehaltung des Seitenverhältnisses */
+       .gallery img {
+        width: 100%;
+        max-width: calc(100% - 1rem); /* Platz für den Randabstand */
+        height: auto;
+        margin: 0 auto; /* Zentriert das Bild */
     }
 }
 
