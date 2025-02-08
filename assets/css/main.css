@@ -3271,29 +3271,27 @@ html {
 	}
 @media (max-width: 768px) {
     .gallery {
-        display: grid;
         grid-template-columns: 1fr; /* Ein Bild pro Zeile */
-        gap: 1rem; /* Abstand zwischen den Elementen */
-        padding: 1rem; /* Abstand zum Rand des Displays */
-        justify-content: center; /* Zentriert die Galerie-Inhalte */
+        gap: 0.5rem; /* Kleinerer Abstand zwischen Links/Bildern */
+        padding: 0.5rem; /* Rand für die Galerie */
     }
 
     .project.thumb {
-        display: block; /* Links wirken wie Blöcke */
-        margin: 0 auto; /* Zentriert den Link */
-        text-align: center; /* Zentriert den Inhalt innerhalb des Links */
-        width: calc(100% - 2rem); /* Nimmt die Breite ein, mit Rand */
-        max-width: 350px; /* Maximale Breite für die Links */
+        display: flex; /* Flexbox für zentrierte Inhalte */
+        justify-content: center; /* Horizontal zentrieren */
+        align-items: center; /* Vertikal zentrieren */
+        margin: 0 auto; /* Zentriert den gesamten Link im Container */
+        width: 100%; /* Link nimmt die volle Breite ein */
+        max-width: 350px; /* Optionale maximale Breite */
     }
 
     .project.thumb img {
-        display: block; /* Bild allein im Block */
-        width: 100%; /* Passt sich an die Breite des Links an */
+        width: 100%; /* Bild nimmt die gesamte Breite des Links ein */
+        max-width: 100%; /* Maximale Breite bleibt flexibel */
         height: auto; /* Beibehaltung des Seitenverhältnisses */
-        border: 4px solid orange; /* Rahmen des Bildes */
+        border: 4px solid orange; /* Bildrahmen bleibt erhalten */
         border-radius: 5px; /* Abgerundete Ecken */
-        margin: 0 auto; /* Zentriert das Bild */
-        box-sizing: border-box; /* Rahmen in die Breite einbeziehen */
+        margin: 0; /* Entfernt unnötige Abstände */
     }
 }
 
