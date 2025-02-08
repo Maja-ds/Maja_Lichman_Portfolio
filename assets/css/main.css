@@ -3273,7 +3273,7 @@ html {
     .gallery {
         grid-template-columns: 1fr; /* Ein Bild pro Zeile */
         gap: 0.5rem; /* Kleinerer Abstand zwischen Links/Bildern */
-        padding: 0.5rem; /* Rand für die Galerie */
+        padding: 0.r1em; /* Rand für die Galerie */
     }
 
     .project.thumb {
